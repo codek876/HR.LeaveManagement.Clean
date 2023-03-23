@@ -33,7 +33,7 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Commands.CreateLeave
             var createLeaveType = _mapper.Map<Domain.LeaveType>(request);
 
             //add to database
-            await _leaveTypeRepository.UpdateAsync(createLeaveType);
+            await _leaveTypeRepository.CreateAsync(createLeaveType);         
 
             return createLeaveType.Id;
         }

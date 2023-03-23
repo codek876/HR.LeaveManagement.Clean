@@ -11,4 +11,6 @@ namespace HR.LeaveManagement.Application.Contracts.Exceptions
     {
         public NotFoundException(string name, object key) : base($"{name} of {key} was not found") { }
     }
+
+
 }

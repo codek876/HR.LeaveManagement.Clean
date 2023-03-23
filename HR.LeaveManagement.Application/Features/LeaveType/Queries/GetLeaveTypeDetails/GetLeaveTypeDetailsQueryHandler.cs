@@ -14,7 +14,8 @@ namespace HR.LeaveManagement.Application.Features.LeaveType.Queries.GetLeaveType
         private readonly IMapper _mapper;
         private readonly ILeaveTypeRepository _leaveTypeRepository;
 
-        public GetLeaveTypeDetailsQueryHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository)
+        public GetLeaveTypeDetailsQueryHandler(IMapper mapper,
+            ILeaveTypeRepository leaveTypeRepository)
         {
             this._mapper = mapper;
             this._leaveTypeRepository = leaveTypeRepository;
